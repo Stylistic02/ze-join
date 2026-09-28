@@ -2,21 +2,20 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Joining Zombie Escape...</title>
+<title>Opening Steam...</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="refresh" content="0; url=steam://connect/82.47.171.122:27015">
 <style>
-  body { background:#111; color:#eee; font-family:Arial,sans-serif; text-align:center; padding-top:15vh; }
-  h1 { color:#c62828; }
-  a { display:inline-block; margin-top:20px; padding:14px 28px; background:#c62828; color:#fff;
-      text-decoration:none; border-radius:8px; font-weight:bold; }
-  code { background:#222; padding:6px 10px; border-radius:6px; }
+  html,body{margin:0;height:100%;background:#0e0e0e;color:#777;font-family:Arial,sans-serif}
+  body{display:flex;align-items:center;justify-content:center}
+  a{color:#777}
 </style>
 </head>
 <body>
-  <h1>🧟 Joining Zombie Escape...</h1>
-  <p>Steam should open automatically. If it doesn't, click the button below.</p>
-  <a href="steam://connect/82.47.171.122:27015">Join via Steam</a>
-  <p style="margin-top:30px">Or type this in your CS 1.6 console:<br><br><code>connect 82.47.171.122:27015</code></p>
-  <script>window.location.href = "steam://connect/82.47.171.122:27015";</script>
+  <p>Opening Steam... <a href="steam://connect/82.47.171.122:27015">click here</a> if nothing happens.</p>
+  <script>
+    location.href = "steam://connect/82.47.171.122:27015";
+    setTimeout(function(){ window.close(); }, 1500);
+  </script>
 </body>
 </html>
